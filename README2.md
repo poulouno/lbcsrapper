@@ -1,2 +1,0 @@
-# lbcsrapper
-scrapping lbc
