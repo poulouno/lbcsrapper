@@ -88,9 +88,8 @@ class LeboncoinSpider(CrawlSpider):
             titles_cleaned = [s.strip() for s in titles]
             print titles_cleaned[0]
             item['title'] = titles_cleaned[0]
-            prices = ad_elem.xpath("*[@itemprop='price']").extract()
-            print prices
-            
+            prices = ad_elem.xpath("string(a//*[@itemprop='price'])").extract()
+            print( prices)
             prices_cleaned = [float(s.replace(u"\xa0€", "").replace(" ", "").strip()) for s in prices]
             if prices_cleaned:
                 item['price'] = prices_cleaned[0]
