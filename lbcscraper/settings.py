@@ -14,7 +14,7 @@ SPIDER_MODULES = ['lbcscraper.spiders']
 NEWSPIDER_MODULE = 'lbcscraper.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'lbcscraper (+http://www.yourdomain.com)'
+USER_AGENT='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -25,7 +25,7 @@ CONCURRENT_REQUESTS = 1
 # Configure a delay for requests for the same website (default: 0)
 # See http://scrapy.readthedocs.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY = 0.1
+DOWNLOAD_DELAY = 5
 
 #Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
