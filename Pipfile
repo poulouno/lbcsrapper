@@ -6,9 +6,10 @@ name = "pypi"
 [dev-packages]
 
 [packages]
-Scrapy = "==0.24.5"
-scrappy = "*"
 scrapy = "*"
+elasticsearch = "*"
+googlemaps = "*"
+"pywin32" = "*"
 
 [requires]
 python_version = "2.7"
